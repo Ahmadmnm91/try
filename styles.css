@@ -1,0 +1,40 @@
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.file-row {
+    transition: background-color 0.2s;
+}
+
+.file-row:hover {
+    background-color: #f8f9fa;
+}
+
+.btn {
+    border-radius: 4px;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+#loginSection {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.file-size {
+    color: #6c757d;
+}
+
+.file-date {
+    color: #6c757d;
+    font-size: 0.9em;
+}
