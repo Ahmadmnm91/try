@@ -21,13 +21,15 @@
             formData.append('file', fileInput.files[0]);
 
             try {
-                const response = await fetch('/upload', {
+                const response = await fetch('https://file.io', {
                     method: 'POST',
                     body: formData
                 });
 
+                const result = await response.json();
+
                 if (response.ok) {
-                    alert('File uploaded successfully.');
+                    alert(`File uploaded successfully. Download link: ${result.link}`);
                 } else {
                     alert('File upload failed.');
                 }
